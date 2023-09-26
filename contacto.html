@@ -65,31 +65,54 @@
           </p>
         </div>
         <div class="col-md-10">
-          <form action="" method="post" class="form">
-            <div class="col form-group">
-              <input
-                type="text"
-                name="nombre"
-                id=""
-                placeholder="Introduce tu nombre"
-              />
-              <input
-                type="text"
-                name="apellidos"
-                id=""
-                placeholder="Introduce tus apellidos"
-              />
+          <form action="" method="post" class="">
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre*"
+                  aria-label="First name"
+                  required
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apellidos"
+                  aria-label="Apellidos"
+                  required
+                />
+              </div>
             </div>
-            <div class="col form-group">
-              <input
-                type="number"
-                name="tel"
-                id=""
-                placeholder="Introduce tu telefono"
-              />
+
+            <div class="row">
+              <div class="col">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Teléfono*"
+                  aria-label="Teléfono"
+                />
+              </div>
+              <div class="col">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecciona un asunto</option>
+                  <option value="1">Sugerencias</option>
+                  <option value="2">Dudas</option>
+                  <option value="3">Problemas</option>
+                </select>
+              </div>
             </div>
-            <textarea name="extra" id="" cols="30" rows="10"></textarea>
-            <button type="submit" class="btn btn-primarysq">Enviar</button>
+
+            <div class="row">
+              <div class="col">
+                <textarea name="extra" id="" cols="30" rows="10" placeholder="Escribe aquí todo lo que necesites..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
       </div>
