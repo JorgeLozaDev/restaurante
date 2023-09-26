@@ -1,0 +1,41 @@
+/* import de la fuente de google font */
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  /* colores principales */
+  --principal_1: #ffbb5c;
+  --principal_2: #ff9b50;
+  --principal_3: #e25e3e;
+  --principal_4: #c63d2f;
+  /* tamaño de texto */
+  --tamanio-texto: 1.25;
+  /* box shadow */
+  --box-shadow: 12px 9px 12px -4px rgba(0, 0, 0, 0.55);
+  /* border-radius */
+  --border-radius: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+/* h2 {
+  font-size: calc(var(--tamanio-texto) * 2rem);
+} */
+
+a {
+  text-decoration: none;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
