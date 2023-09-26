@@ -1,23 +1,171 @@
 /* import de la fuente de google font */
 @import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
 :root {
   /* colores principales */
   --principal_1: #ffbb5c;
   --principal_2: #ff9b50;
   --principal_3: #e25e3e;
   --principal_4: #c63d2f;
+  --blanco: #fff;
   /* tamaño de texto */
   --tamanio-texto: 1.25;
   /* box shadow */
   --box-shadow: 12px 9px 12px -4px rgba(0, 0, 0, 0.55);
+  --box-shadow: 0 0 20px #0000001c;
   /* border-radius */
   --border-radius: 15px;
 }
 
 body {
-  /*background: url("../img/logo/gift-box.png") space 0 0 ;
-   background-size: cover;
-  background-repeat: round; */
+  font-family: "Bellota", cursive;
+  background: url(../img/fondo.png);
 }
 h1,
 h2,
@@ -27,6 +175,9 @@ h5 {
   font-weight: 700;
 }
 
+.logo {
+  width: 3em;
+}
 a {
   text-decoration: none;
 }
@@ -44,4 +195,17 @@ img {
 .cajaGeneral {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
+  max-height: 18em;
+  overflow: hidden;
+  background-color: var(--blanco);
 }
+
+
+
+/* .cajaGeneral video {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.cajaGeneral img {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+} */
