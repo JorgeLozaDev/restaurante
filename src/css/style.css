@@ -188,24 +188,28 @@ video {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
-
 .cajaGeneral {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
-  max-height: 18em;
+  /* max-height: 18em;*/
   overflow: hidden;
   background-color: var(--blanco);
 }
 
-
-
-/* .cajaGeneral video {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+.item {
+  height: 25em;
+}
+.principal {
+  background: url(../img/cabecera.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.cajaGeneral img {
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
-} */
+.img-carousel {
+  width: 10em;
+  height: 10em;
+}
