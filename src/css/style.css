@@ -187,10 +187,7 @@ video {
   height: auto;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
+
 
 .cajaGeneral {
   box-shadow: var(--box-shadow);
@@ -200,12 +197,3 @@ img {
   background-color: var(--blanco);
 }
 
-
-
-/* .cajaGeneral video {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-}
-
-.cajaGeneral img {
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
-} */
