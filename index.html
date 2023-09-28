@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>George Restaurant</title>
+    <title>Box surprise Restaurant</title>
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- cabecera -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg fixed-top menu">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img src="src/img/logo/svg/solo-logo-black.svg" class="logo" alt=""
@@ -68,56 +68,70 @@
         </div>
       </div>
     </nav>
-    <!-- cabecera -->
+    <!-- fin cabecera -->
 
-    <div class="container-fluid p-0">
+    <!-- carousel -->
+    <div class="container-fluid pt-5">
       <div class="row">
         <div class="owl-carousel owl-theme">
           <div class="item principal">
             <div class="cajaCarousel">
-              <h1>No sabes que pedir</h1>
-              <img src="src/img/caja1.png" alt="" class="img-carousel" />
+              <h2 class="h2">No sabes que pedir</h2>
+              <a href="/carta.html">
+                <img
+                  src="src/img/caja1.png"
+                  alt=""
+                  id="img-carousel"
+                  class="heartbeat"
+                />
+              </a>
+              <p>Nosotros nos encargamos</p>
             </div>
           </div>
-          <div class="item"></div>
-          <div class="item"><h4>3</h4></div>
+          <div class="item principalBebidas">
+            <h2>No sabes que beber</h2>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- fin carousel -->
+
+    <!-- caja sobre nosotros -->
     <div class="container cajaGeneral my-4">
       <div class="row align-items-center">
         <div class="col-md-4 p-0">
           <div class="px-3">
             <h2 class="h2">Sobre Nosotros</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto error voluptatibus, dignissimos sequi non cupiditate
-              nemo, quae qui dolorem corporis delectus blanditiis autem!
-              Adipisci, consequuntur sit! Omnis ratione ullam quibusdam.
+              Somos un "restaurante" especializado en.... TODAS las comidas que
+              existen, tierra, mar y aire. Tú solo pide tu caja sorpresa y
+              nosotros nos encargamos del resto... Pero si lo necesitas, siempre
+              puedes contactar con nosotros
             </p>
-            <button class="btn btn-primary" href="contacto.html">
-              Contacta
+            <button class="btn btn-primary my-2" href="contacto.html">
+              Contacto
             </button>
           </div>
         </div>
         <div class="col-md-8 p-0">
-          <div class="video-wrapper">
-            <video
-              src="src/img/restaurant.mp4"
-              lazyload
-              autoplay
-              loop
-              muted
-            ></video>
-          </div>
+          <video
+            src="src/img/restaurant.mp4"
+            lazyload
+            autoplay
+            loop
+            muted
+          ></video>
         </div>
       </div>
     </div>
 
+    <!-- fin caja sobre nosotros -->
+
+    <!-- caja nuestra comida -->
     <div class="container cajaGeneral my-4">
       <div class="row align-items-center">
-        <div class="col-md-8 p-0 fondoImg">
+        <div class="col-md-8 p-0">
           <img
             src="src/img/plato.jpg"
             alt="Imagen de un plato generico de un restaurante"
@@ -128,25 +142,39 @@
           <div class="px-3">
             <h2 class="h2">Nuestra comida</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
-              nesciunt, facilis delectus optio cum, laudantium odit eaque
-              consectetur nisi eveniet vero. Dolorem obcaecati dignissimos
-              soluta. Sunt et obcaecati dolor minus!
+              Hacemos una seleccion cuidadosa de todos los alimentos, siempre
+              seleccionamos los mas frescos.
+            </p>
+            <p>
+              Y si tienes algún tipo de alergia, no hay problema, indicanoslo y
+              nosotros nos encargamos.
+            </p>
+            <p>
+              Eres vegano, también tenemos un menu espial para todos vosotros
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
+    <!-- fin caja nuestra comida -->
+
+    <!-- caja informacion -->
+    <div class="container-fluid informacion informacion_bg">
       <div class="row">
         <div class="col text-center">
-          <h3 class="h3">¿Quieres más información?</h3>
-          <p>Aun no te ha quedado claro,</p>
-          <a href="contacto.html">Contacta con nosotros</a>
+          <div class="cajaInformacion">
+            <h3 class="h3">¿Quieres más información?</h3>
+            <p class="">¿Aún no te ha quedado claro?</p>
+            <a class="btn btn-primary" href="contacto.html"
+              >Contacta con nosotros</a
+            >
+          </div>
         </div>
       </div>
     </div>
+    <!-- fin caja informacion -->
+
     <!-- footer -->
     <div class="container-fluid">
       <footer
