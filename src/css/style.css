@@ -3,10 +3,6 @@
 
 :root {
   /* colores principales */
-  --principal_1: #ffbb5c;
-  --principal_2: #ff9b50;
-  --principal_3: #e25e3e;
-  --principal_4: #c63d2f;
   --blanco: #fff;
   /* tamaño de texto */
   --tamanio-texto: 1.25;
@@ -17,6 +13,7 @@
   --border-radius: 15px;
 }
 
+/* === GENERAL === */
 body {
   font-family: "Bellota", cursive;
   background: url(../img/fondo.png);
@@ -28,18 +25,33 @@ h4,
 h5 {
   font-weight: 700;
 }
-
-.logo {
-  width: 3em;
-}
 a {
   text-decoration: none;
 }
 
+.logo {
+  width: 3em;
+}
 video {
   width: 100%;
   height: auto;
 }
+
+.menu {
+  background-color: white;
+}
+
+.owl-nav {
+  position: absolute;
+  top: calc(100% - 50%);
+}
+
+footer {
+  background-color: white;
+}
+/* === GENERAL === */
+
+/* === HOME === */
 
 .cajaGeneral {
   box-shadow: var(--box-shadow);
@@ -63,6 +75,7 @@ video {
 .item {
   height: 100%;
 }
+
 .principal {
   background: url(../img/cabecera.jpg);
   background-size: cover;
@@ -76,6 +89,7 @@ video {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 #img-carousel {
   width: 20em;
   height: 20em;
@@ -108,6 +122,7 @@ video {
   height: 10em;
 }
 
+/* PAG CARTA */
 .cabeceraCarta {
   height: 32.3em;
   background: url(../img/carta_cebecera.jpg);
@@ -123,27 +138,11 @@ video {
   z-index: 2;
 }
 
-.carne {
-  background: url(../img/carne.jpg);
-}
-
 .filaCajas {
   display: flex;
   justify-content: center;
 }
 
-.menu {
-  background-color: white;
-}
-
-.owl-nav {
-  position: absolute;
-  top: calc(100% - 50%);
-}
-
-footer {
-  background-color: white;
-}
 /* animation */
 
 .heartbeat {
@@ -151,7 +150,7 @@ footer {
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-/* keyframes */
+/* === keyframes === */
 
 @keyframes scrollBg {
   from {
@@ -231,7 +230,7 @@ footer {
   }
 }
 
-/* media query */
+/* === media query === */
 
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
