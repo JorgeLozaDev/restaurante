@@ -29,11 +29,19 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
     <!-- cabecera -->
-    <nav class="navbar navbar-expand-lg fixed-top menu">
+    <nav class="navbar navbar-expand-lg fixed-top menu fill">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img src="src/img/logo/svg/solo-logo-black.svg" class="logo" alt=""
@@ -71,7 +79,7 @@
     <!-- fin cabecera -->
 
     <!-- carousel -->
-    <div class="container-fluid pt-5 ">
+    <div class="container-fluid pt-5">
       <div class="row">
         <div class="owl-carousel owl-theme px-0">
           <div class="item principal">
@@ -89,7 +97,9 @@
             </div>
           </div>
           <div class="item principalBebidas">
-            <h2>No sabes que beber</h2>
+            <div>
+              <h2>No sabes que beber</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -178,20 +188,26 @@
     <!-- footer -->
     <div class="container-fluid p-0">
       <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
       >
         <p class="col-md-4 mb-0 text-body-secondary">
-          © 2023 George restaurant
+          © 2023 Mystery box restaurant
         </p>
 
-        <a
-          href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
+        <div class="rrss">
+          <a href="https://www.facebook.com/mvfAdamRichman/?locale=es_LA">
+            <i class="fa-brands fa-facebook-f fa-beat"></i>
+          </a>
+          <a href="https://twitter.com/AdamRichman">
+            <i class="fa-brands fa-x-twitter fa-beat"></i>
+          </a>
+          <a href="https://www.instagram.com/manvsfood/">
+            <i class="fa-brands fa-instagram fa-beat"></i>
+          </a>
+          <a href="https://www.youtube.com/watch?v=pT-E_jTcsD8">
+            <i class="fa-brands fa-youtube fa-beat"></i>
+          </a>
+        </div>
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">

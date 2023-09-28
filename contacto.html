@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- cabecera -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg fixed-top menu fill">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img src="src/img/logo/svg/solo-logo-black.svg" class="logo" alt=""
@@ -70,71 +70,121 @@
     </nav>
     <!-- fin cabecera -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
-            nobis repudiandae odit ea soluta minima excepturi perferendis fugit
-            commodi, accusantium, repellat, unde ex cupiditate. Exercitationem
-            corrupti mollitia enim magni error.
-          </p>
+    <!-- div banner principal -->
+    <div class="container-fluid cabeceraContacto mb-5">
+      <div class="row align-items-center">
+        <div class="col">
+          <h2 class="h2 text-center">Contacta con nosotros</h2>
         </div>
-        <div class="col-md-10">
-          <form action="" method="post" class="">
-            <div class="row">
-              <div class="col">
+      </div>
+    </div>
+    <!-- fin banner principal -->
+
+    <div class="container cajaGeneral mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <p>
+            No dudes en dejar tus preguntas, nosotros te responderemos lo mas
+            pronto posible
+          </p>
+          <p>Pasate por nuestras redes sociales</p>
+          <div class="rrss">
+            <a href="https://www.facebook.com/mvfAdamRichman/?locale=es_LA">
+              <i class="fa-brands fa-facebook-f fa-beat"></i>
+            </a>
+            <a href="https://twitter.com/AdamRichman">
+              <i class="fa-brands fa-x-twitter fa-beat"></i>
+            </a>
+            <a href="https://www.instagram.com/manvsfood/">
+              <i class="fa-brands fa-instagram fa-beat"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=pT-E_jTcsD8">
+              <i class="fa-brands fa-youtube fa-beat"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <form class="row g-3 my-4">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control my-3"
+                id=""
+                placeholder="Nombre*"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control my-3"
+                id=""
+                placeholder="Apellidos"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                required
+              >
+                <option value="">Selecciona un asunto</option>
+                <option value="1">Sugerencias</option>
+                <option value="2">Dudas</option>
+                <option value="3">Problemas</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id=""
+                placeholder="Email*"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="number"
+                class="form-control"
+                id=""
+                placeholder="Telefono*"
+                required
+              />
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
                 <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nombre*"
-                  aria-label="First name"
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
                   required
                 />
+                <label class="form-check-label" for="gridCheck">
+                  Acepto las <a href="#">politicas de privacidad</a>
+                </label>
               </div>
-              <div class="col">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
                 <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Apellidos"
-                  aria-label="Apellidos"
-                  required
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
                 />
+                <label class="form-check-label" for="gridCheck">
+                  Acepto recibir publicidad</a>
+                </label>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="Teléfono*"
-                  aria-label="Teléfono"
-                />
-              </div>
-              <div class="col">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Selecciona un asunto</option>
-                  <option value="1">Sugerencias</option>
-                  <option value="2">Dudas</option>
-                  <option value="3">Problemas</option>
-                </select>
-              </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar <i class="fa-solid fa-paper-plane fa-bounce"></i></button>
             </div>
-
-            <div class="row">
-              <div class="col">
-                <textarea
-                  name="extra"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Escribe aquí todo lo que necesites..."
-                ></textarea>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
       </div>
@@ -146,17 +196,23 @@
         class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
       >
         <p class="col-md-4 mb-0 text-body-secondary">
-          © 2023 George restaurant
+          © 2023 Mystery box restaurant
         </p>
 
-        <a
-          href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
+        <div class="rrss">
+          <a href="https://www.facebook.com/mvfAdamRichman/?locale=es_LA">
+            <i class="fa-brands fa-facebook-f fa-beat"></i>
+          </a>
+          <a href="https://twitter.com/AdamRichman">
+            <i class="fa-brands fa-x-twitter fa-beat"></i>
+          </a>
+          <a href="https://www.instagram.com/manvsfood/">
+            <i class="fa-brands fa-instagram fa-beat"></i>
+          </a>
+          <a href="https://www.youtube.com/watch?v=pT-E_jTcsD8">
+            <i class="fa-brands fa-youtube fa-beat"></i>
+          </a>
+        </div>
 
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
@@ -187,6 +243,12 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>

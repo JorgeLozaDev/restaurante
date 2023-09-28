@@ -49,6 +49,84 @@ video {
 footer {
   background-color: white;
 }
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+/* 
+.main-content {
+  position: relative;
+}
+  .owl-theme 
+      .custom-nav {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+
+          .owl-prev, .owl-next {
+              position: absolute;
+              height: 100px;
+              color: inherit;
+              background: none;
+              border: none;
+              z-index: 100;
+
+              i {
+                  font-size: 2.5rem;
+                  color: #cecece;
+              }
+          }
+
+          .owl-prev {
+              left: 0;
+          }
+
+          .owl-next {
+              right: 0;
+          }
+      }
+  }
+} */
 /* === GENERAL === */
 
 /* === HOME === */
@@ -83,11 +161,25 @@ footer {
   background-position: center;
 }
 
+.principal div {
+  background: rgba(6, 6, 6, 0.2);
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+}
+
 .principalBebidas {
   background: url(../img/bebidas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.principalBebidas div {
+  background: rgba(6, 6, 6, 0.2);
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
 }
 
 #img-carousel {
@@ -129,9 +221,26 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: var(--blanco);
 }
 
 .cabeceraCarta .row {
+  background: rgba(6, 6, 6, 0.72);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+.cabeceraContacto {
+  height: 32.3em;
+  background: url(../img/contacto_cabecera.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.cabeceraContacto .row {
   background: rgba(6, 6, 6, 0.72);
   overflow: hidden;
   height: 100%;
@@ -143,6 +252,13 @@ footer {
   justify-content: center;
 }
 
+.rrss {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
 /* animation */
 
 .heartbeat {
@@ -152,9 +268,26 @@ footer {
 
 /* === keyframes === */
 
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
 @keyframes scrollBg {
   from {
-    background-position: left;
+    background-position: 0 100px;
   }
   to {
     background-position: right;
