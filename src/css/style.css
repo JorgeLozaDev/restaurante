@@ -92,41 +92,7 @@ nav.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
-/* 
-.main-content {
-  position: relative;
-}
-  .owl-theme 
-      .custom-nav {
-          position: absolute;
-          top: 20%;
-          left: 0;
-          right: 0;
 
-          .owl-prev, .owl-next {
-              position: absolute;
-              height: 100px;
-              color: inherit;
-              background: none;
-              border: none;
-              z-index: 100;
-
-              i {
-                  font-size: 2.5rem;
-                  color: #cecece;
-              }
-          }
-
-          .owl-prev {
-              left: 0;
-          }
-
-          .owl-next {
-              right: 0;
-          }
-      }
-  }
-} */
 /* === GENERAL === */
 
 /* === HOME === */
@@ -173,10 +139,11 @@ nav.fill ul li a:hover:after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: var(--blanco);
 }
 
 .principalBebidas div {
-  background: rgba(6, 6, 6, 0.2);
+  background: rgba(6, 6, 6, 0.54);
   overflow: hidden;
   height: 100%;
   z-index: 1;
@@ -259,11 +226,32 @@ nav.fill ul li a:hover:after {
   gap: 1em;
 }
 
+.card {
+  margin: 1em 0;
+}
+
 /* animation */
 
 .heartbeat {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* === CARNE === */
+.cabeceraCarne {
+  height: 32.3em;
+  background: url(../img/carne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.cabeceraCarne .row {
+  background: rgba(6, 6, 6, 0.72);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
 }
 
 /* === keyframes === */
@@ -366,17 +354,37 @@ nav.fill ul li a:hover:after {
 /* === media query === */
 
 /* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
+@media (max-width: 1400px) {
 }
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
 }
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+@media (max-width: 993px) {
 }
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 }
 /* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
+  .cajaInformacion {
+    width: 20em;
+    height: 10em;
+  }
+  .owl-item {
+    height: 30em;
+  }
+  .cajaCarousel {
+    /* padding-top: 3em; */
+  }
+  #img-carousel {
+    width: 15em;
+    height: 15em;
+  }
+}
+@media (max-width: 325px) {
+  .cajaInformacion {
+    width: 17em;
+    height: 10em;
+  }
 }
