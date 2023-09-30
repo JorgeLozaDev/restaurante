@@ -254,6 +254,113 @@ nav.fill ul li a:hover:after {
   z-index: 2;
 }
 
+/* === PESCADO === */
+.cabeceraPescado {
+  height: 32.3em;
+  background: url(../img/pescado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.cabeceraPescado .row {
+  background: rgba(6, 6, 6, 0.72);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+/* === AVES === */
+
+.cabeceraAves {
+  height: 32.3em;
+  background: url(../img/ave.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.cabeceraAves .row {
+  background: rgba(6, 6, 6, 0.72);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+/* === VEGANO === */
+
+.cabeceraVegano {
+  height: 32.3em;
+  background: url(../img/vegano.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.cabeceraVegano .row {
+  background: rgba(6, 6, 6, 0.72);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+/* === BEBIDAS === */
+
+.cabeceraBebidas {
+  height: 32.3em;
+  background: url(../img/bebidas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--blanco);
+}
+
+.cabeceraBebidas .row {
+  background: rgba(6, 6, 6, 0.72);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+.listaMenu {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.listaMenu li {
+  margin-bottom: 1em;
+}
+.listaMenu li:last-child {
+  margin-bottom: 0;
+}
+
+.menuCartaTitulo {
+  display: table-cell;
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 5px;
+}
+
+.lineaDePuntos {
+  height: 3px;
+  border-bottom: 1px dotted #828383;
+  display: table-cell;
+  width: 98%;
+  z-index: 1;
+  position: relative;
+  bottom: 6px;
+}
+
+.precioMenuCarta {
+  display: table-cell;
+  width: 1%;
+  padding-left: 7px;
+  white-space: nowrap;
+}
 /* === keyframes === */
 
 /* Keyframes */
@@ -363,7 +470,14 @@ nav.fill ul li a:hover:after {
 @media (max-width: 993px) {
 }
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+  .menuCartaTitulo {
+    width: 80%;
+    white-space: normal;
+  }
+  .lineaDePuntos {
+    bottom: 35px;
+  }
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 600px) {
@@ -374,12 +488,20 @@ nav.fill ul li a:hover:after {
   .owl-item {
     height: 30em;
   }
-  .cajaCarousel {
-    /* padding-top: 3em; */
-  }
+
   #img-carousel {
     width: 15em;
     height: 15em;
+  }
+  .lineaDePuntos {
+    display: none;
+  }
+  .menuCartaTitulo {
+    width: 80%;
+    white-space: normal;
+  }
+  .listaMenu li {
+    border-bottom: 1px solid black;
   }
 }
 @media (max-width: 325px) {
