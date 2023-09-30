@@ -4,6 +4,7 @@
 :root {
   /* colores principales */
   --blanco: #fff;
+  --negro: #000;
   /* tamaño de texto */
   --tamanio-texto: 1.25;
   /* box shadow */
@@ -38,7 +39,7 @@ video {
 }
 
 .menu {
-  background-color: white;
+  background-color: var(--blanco);
 }
 
 .owl-nav {
@@ -47,7 +48,7 @@ video {
 }
 
 footer {
-  background-color: white;
+  background-color: var(--blanco);
 }
 /* stroke */
 nav.stroke ul li a,
@@ -91,6 +92,15 @@ nav.fill ul li a:hover:after {
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
   opacity: 1;
+}
+
+.btn-primary {
+  background-color: var(--negro);
+  border-color: var(--negro);
+}
+
+.fa-brands:hover {
+  color: var(--negro);
 }
 
 /* === GENERAL === */
@@ -174,7 +184,7 @@ nav.fill ul li a:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--blanco);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   width: 40em;
@@ -361,6 +371,7 @@ nav.fill ul li a:hover:after {
   padding-left: 7px;
   white-space: nowrap;
 }
+
 /* === keyframes === */
 
 /* Keyframes */
