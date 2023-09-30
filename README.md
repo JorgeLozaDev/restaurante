@@ -16,7 +16,7 @@ Ahora te explicaremos como funciona nuestra web.
 
 Home
 
-(src/img/Screenshot_1.png)
+!(src/img/Screenshot_1.png)
 
 
 ## Autores ✒️
